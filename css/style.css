@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    height: 85vh;
+    background-color: hsl(212, 21%, 14%);
+
+}
+
+.phone-img {
+    display: none;
+}
+
+.container {
+    height: 500px;
+    width: 42rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    border-style: none;
+    border-radius: 10px;
+    background-color: white;
+}
+
+img,
+picture {
+    display: block;
+    line-height: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.left .desktop-img {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.left {}
+
+.right {
+    padding: 30px;
+}
+
+.product-name {
+    font-size: 2rem;
+    font-weight: 1000;
+
+}
+
+.overline,
+.product-name,
+.product-info {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.current-price,
+.real-price {
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.overline {
+    letter-spacing: 0.3em;
+}
+
+.current-price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.real-price {
+    bottom: 5px;
+    text-decoration: line-through;
+}
+
+.card-footer button {
+    display: block;
+    width: 250px;
+    padding: 15px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 8px;
+    background-color: hsl(158, 36%, 37%);
+}
+
+.card-footer button:hover {
+    background-color: hsl(228, 12%, 48%);
+}
+
+@media (max-width:1000px) {
+
+
+    .desktop-img {
+        display: none;
+    }
+
+    .phone-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        display: block;
+        height: 1200px;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 50%;
+
+    }
+
+    .left {
+        padding: 10px;
+
+    }
+
+    .right {
+
+        padding: 30px;
+
+    }
+
+    .card-footer {
+        padding: 20px;
+
+    }
+
+}
